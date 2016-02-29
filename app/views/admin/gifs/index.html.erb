@@ -1,0 +1,7 @@
+<h1>All Gifs</h1>
+<% @gifs.each do |g| %>
+  <p><img src="<%= g.image_url %>"/></p>
+  <%= link_to g.category, admin_gif_path(g) %>
+<% end %>
+
+<%= link_to "Find New Gif", new_admin_gif_path %>

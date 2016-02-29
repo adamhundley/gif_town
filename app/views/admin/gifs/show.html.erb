@@ -1,0 +1,7 @@
+<h1>GIF</h1>
+
+<%= @gif.category %>
+<p><img src="<%= @gif.image_url %>"/></p>
+
+
+<%= link_to "Delete", admin_gif_path(@gif.id), method: "Delete" %>

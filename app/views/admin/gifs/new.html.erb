@@ -1,0 +1,6 @@
+<%= form_for [:admin, @gif] do |f| %>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+
+  <%= f.submit "Find" %>
+<% end %>
